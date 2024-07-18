@@ -89,7 +89,8 @@ openfst-$(OPENFST_VERSION)/Makefile: openfst-$(OPENFST_VERSION)
 		LDFLAGS="$(LDFLAGS)" LIBS="-ldl"
 
 openfst-$(OPENFST_VERSION):
-	git clone --single-branch https://github.com/alphacep/openfst openfst-$(OPENFST_VERSION)
+	git clone https://github.com/bmilde/openfst 
+	#git clone --single-branch https://github.com/bmilde/openfst openfst-$(OPENFST_VERSION)
 
 openfst_cleaned:
 	-for d in openfst/ openfst-*/; do \
